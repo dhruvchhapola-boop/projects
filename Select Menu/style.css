@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+.hero{
+    width: 100%;
+    min-height: 100%;
+    background: linear-gradient(#53bdffe8, #b928ee);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selector{
+    width: 350px;
+}
+#selectField{
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+#selectField .selected{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.selected-icon{
+    width: 20px;
+    display: none;
+}
+
+.selected-icon.visible{
+    display: inline-block;
+}
+
+#selectField .arrow{
+    width: 12px;
+    transition: transform 0.3s ease;
+}
+#list{
+    width: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 6px;
+    overflow: hidden;
+    display: none;
+}
+.selector.active #list{
+    display: block;
+}
+.selector.active #selectField .arrow{
+    transform: rotate(180deg);
+}
+.options{
+    width: 100%;
+    padding: 10px 15px;
+    list-style: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.options img{
+    width: 25px;
+}
+.options:hover{
+    background: rgba(0, 0, 0, 0.05);
+}

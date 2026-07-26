@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+body{
+    background: linear-gradient(90deg, #24317e, #a6407d);
+    font-family: 'Courier Prime', monospace;
+}
+.stopwatch{
+    width: 90%;
+    height: 600px;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url("elliott-engelmann-DjlKxYFJlTc-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    background-position: center;
+    text-align: center;
+    padding: 40px 0;
+    color: white;
+    margin: 200px auto 0 ;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.8 );
+
+}
+.stopwatch h1{
+   margin-top: 60px;
+   font-size: 64px;
+   font-weight: 300;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttons img{
+    width: 50px;
+    margin: 0 20px;
+    cursor: pointer;
+}
+.buttons img:nth-child(2){
+    width: 80px;
+    
+}
